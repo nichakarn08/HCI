@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {fSont-family: "Montserrat", sans-serif;}
+</style>
+
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <center><h3 class="w3-wide"><b>Body & Personal care</b></h3></center>
+    <img src="iconn.jpg" alt="Jeans" style="width:100%">
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#" class="w3-bar-item w3-button">Skincare</a>
+    <a href="#" class="w3-bar-item w3-button">Makeup</a>
+    <a href="#" class="w3-bar-item w3-button">Baby & Mom</a>
+    <a href="#" class="w3-bar-item w3-button">Body & Personal care</a>
+    <a href="#" class="w3-bar-item w3-button">Perfume</a>
+    <a href="#" class="w3-bar-item w3-button">Supplements</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">@NISRATSHA</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale"></div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="c1.jpg" style="width:100%">
+        <p>Dnee น้ำยาซักผ้า<br>กลิ่น Honey Star<br><b>฿399</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="w3-container">
+        <img src="c2.jpg" style="width:100%">
+        <p>Dnee น้ำยาซักผ้า<br>กลิ่น Little Star<br><b>฿399</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="c3.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          
+        </div>
+        <p>Dnee น้ำยาซักผ้า<br>กลิ่น Happy Baby<br><b>฿399</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <div class="w3-container">
+        <img src="c4.jpg" style="width:100%">
+        <p>Dnee น้ำยาซักผ้า<br>กลิ่น Aleo Vera<br><b>฿399</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="c5.jpg" style="width:100%">
+        <p>Dnee น้ำยาซักผ้า<br>กลิ่น Little Star<br><b>฿159</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="c6.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Dnee น้ำยาปรับผ้านุ่ม<br>กลิ่น Happy Baby<br><b>฿159</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="c7.jpg" style="width:100%">
+        <p>Dnee น้ำยาปรับผ้านุ่ม<br>กลิ่น Little Star<br><b>฿159</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <div class="w3-container">
+        <img src="c8.jpg" style="width:100%">
+        <p>Dnee น้ำยาปรับผ้านุ่ม<br>กลิ่น Cotton Soft<br><b>฿159</b></p>
+        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <img src="c9.jpg" style="width:100%">
+          <p>Dnee น้ำยาปรับผ้านุ่ม<br>กลิ่น Morning Fresh<br><b>฿159</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="w3-container">
+          <img src="c10.jpg" style="width:100%">
+          <p>แปรงล้างขวดนมฟองน้ำ<br><b>฿79</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="c11.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">New</span>
+          </div>
+          <p>Dnee สบู่เหลว <br>สูตร เจนเทิลฟอร์ฟอร์นิวบอร์น<br><b>฿185</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="w3-container">
+          <img src="c12.jpg" style="width:100%" >
+          <p>V care สำลี<br><b>฿29</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <img src="c13.jpg" style="width:100%">
+          <p>Dnee สบู่เหลว <br>สูตร ซากุระฟอร์นิวบอร์น<br><b>฿185</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="c14.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">Sale</span>
+            <div class="w3-display-middle w3-display-hover">
+             
+            </div>
+          </div>
+          <p>อ่างล้างเอนกประสงค์<br><b class="w3-text-red">฿249</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <img src="c15.jpg" style="width:100%">
+          <p>Dnee สบู่เหลว <br>สูตร ออร์แกนิคฟอร์นิวบอร์น<br><b>฿185</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="w3-container">
+          <img src="c16.jpg" style="width:100%">
+          <p>ที่คว่ำขวดนมที่ตากขวดนม<br><b>฿65</b></p>
+          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+   
+  </div>
+
+  
+
+</body>
+</html>
+
+
+
+ 
